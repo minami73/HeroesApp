@@ -1,1 +1,30 @@
-<p>Desde Register Page</p>
+<div class="flex flex-column">
+
+    <span class="text-center text-lg mb-4">Registro</span>
+
+    <mat-form-field>
+        <mat-label>Usuario</mat-label>
+        <input type="text" matInput placeholder="Escriba su usuario...">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input type="text" matInput placeholder="Escriba su nombre...">
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Contraseña</mat-label>
+        <input type="password" matInput placeholder="Escriba su contraseña...">
+    </mat-form-field>
+
+
+    <button mat-button mat-flat-button color="primary">
+        Registrarse
+        <mat-icon>done</mat-icon>
+    </button>
+
+    <div class="flex justify-content-center mt-5">
+        <a routerLink="/auth/register">¿Ya tienes cuenta?</a>
+    </div>
+
+</div>
