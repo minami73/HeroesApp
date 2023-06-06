@@ -6,6 +6,7 @@
     </mat-card-header>
 
     <!-- !TODO imagen -->
+    <img mat-card-image [src]="hero | heroImage" [alt]="hero.superhero">
 
     <mat-card-content class="mt-2">
 
@@ -25,19 +26,14 @@
     <mat-divider></mat-divider>
 
     <mat-card-actions>
-        <button mat-button
-            mat-raised
-            color="primary"
-            [routerLink]="['/heroes/edit', hero.id]">
+        <button mat-button mat-raised color="primary" [routerLink]="['/heroes/edit', hero.id]">
             <mat-icon>edit</mat-icon>
             Editar
         </button>
 
         <span class="spacer"></span>
 
-        <button mat-button
-            mat-raised
-            [routerLink]="['/heroes', hero.id]">
+        <button mat-button mat-raised [routerLink]="['/heroes', hero.id]">
             <mat-icon>more_horizontal</mat-icon>
             Ver Más
         </button>
